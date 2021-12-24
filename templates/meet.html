@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+    <title></title>
+  </head>
+<body style="background-color:#33475b">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="/">IPL Data Predictor</a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active1">
+              <a class="nav-link active text-light" aria-current="page" href="/meetus">Meet the team</a>
+            </li>
+              <li class="nav-item ">
+              <a class="nav-link active text-light" aria-current="page" href="/about">About and Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container color-body">
+          <div class="row">
+                <div class="imgcolor col-md-6 col-sm-6 col-12">
+                                    <div class="team-member">
+                                        <div class="team-img">
+                                            <img src="{{ url_for('static', filename='souvik.jpg') }}" alt="team member" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="team-title">
+                                        <h5>Souvik Ghosh</h5>
+                                        <span>I have built this website. I have also worked on data cleaning, processing and using regression and machine learning models</span>
+                                    </div>
+                </div>
+                <div class="imgcolor col-md-6 col-sm-6 col-12">
+                                    <div class="team-member">
+                                        <div class="team-img">
+                                            <img src="{{ url_for('static', filename='modi.jpg') }}" alt="team member" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="team-title">
+                                        <h5>Soumyadeep Mukherjee</h5>
+                                        <span>I have worked on data cleaning,encoding and the machine learning model</span>
+                                    </div>
+                </div>
+
+                <div class="imgcolor col-md-6 col-sm-6 col-12">
+                                    <div class="team-member">
+                                        <div class="team-img">
+                                            <img src="{{ url_for('static', filename='ahit.jpg') }}" alt="team member" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="team-title">
+                                        <h5>Ahitagni Pai</h5>
+                                        <span>I have worked on data cleaning and the machine learning model</span>
+                                    </div>
+                </div>
+
+                <div class="imgcolor col-md-6 col-sm-6 col-12">
+                                    <div class="team-member">
+                                        <div class="team-img">
+                                            <img src="{{ url_for('static', filename='subha.jpg') }}" alt="team member" class="img-responsive">
+                                        </div>
+                                    </div>
+                                    <div class="team-title">
+                                        <h5>Subhadeep Das</h5>
+                                        <span>I have worked on data cleaning and the machine learning model</span>
+                                    </div>
+                </div>
+          </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+
+</html>
